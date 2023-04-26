@@ -32,6 +32,7 @@ body {
 
 .bg-video-content {
     position: relative;
+    padding-top: 80px;
     z-index: 2;
 }
 
@@ -58,7 +59,6 @@ body {
     /* background-color: aqua; */
     border: 2px;
     border-color: blueviolet;
-    margin-top: 10vh;
     flex-direction: column;
     justify-content: space-around;
 }
