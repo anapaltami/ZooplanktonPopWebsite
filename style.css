@@ -1,0 +1,16 @@
+body {
+    color: white;
+}
+
+.hero {
+    width: 100%;
+}
+
+.navbar-custom {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+}
+
+#nav-container {
+    margin-top: 5px;
+}
