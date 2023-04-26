@@ -17,59 +17,77 @@
 </head>
 
 <!-- * Body content -->
-<body style="height: 2000px;">
-    <div class="hero"></div>
-    <!-- * Header content -->
-    <header>
-        <div class="container fixed-top" id="nav-container">
-            <nav class="navbar rounded navbar-expand-sm navbar-custom">
-                <a class="navbar-brand h1" href="#">
-                    <i class="bi bi-house-door"></i>
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a href="#" class="nav-link active">Home</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a href="#" class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Features</a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li>
-                                    <a href="#" class="dropdown-item">Feature #1</a>
-                                </li>
-                                <li>
-                                    <a href="#" class="dropdown-item">Feature #2</a>
-                                </li>
-                                <li>
-                                    <a href="#" class="dropdown-item">Feature #3</a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#" class="nav-link">Resources</a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
+<body>
+
+    <!-- * Video background for site -->
+    <div class="bg-video-container">
+        <div class="bg-video-mask"></div>
+        <video autoplay muted loop playsinline poster="img/underwater.jpg">
+            <source class="h-100" src="video/underwater.mp4" type="video/mp4"/>
+            <source class="h-100" src="video/underwater.webm" type="video/webm"/>
+        </video>
+
+        <!-- * Content to display over background video -->
+        <div class="bg-video-content">
+            <div class="container">
+                <!-- d-flex text-center align-items-center -->
+
+                <!-- * Header content -->
+                <header>
+                    <div class="container fixed-top" id="nav-container">
+                        <nav class="navbar rounded navbar-expand-sm navbar-light navbar-custom">
+                            <a class="navbar-brand h1" href="#">
+                                <i class="bi bi-house-door"></i>
+                            </a>
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div class="collapse navbar-collapse" id="navbarNav">
+                                <ul class="navbar-nav">
+                                    <li class="nav-item">
+                                        <a href="#" class="nav-link active">Home</a>
+                                    </li>
+                                    <li class="nav-item dropdown">
+                                        <a href="#" class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Features</a>
+                                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                            <li>
+                                                <a href="#" class="dropdown-item">Feature #1</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="dropdown-item">Feature #2</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="dropdown-item">Feature #3</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#" class="nav-link">Resources</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </nav>
+                    </div>
+                    <h1>Zooplankton Populations</h1>
+                </header>
+            
+                <!-- * Main content -->
+                <main>
+                    <h2>Test H2</h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos, at maxime quo molestiae quibusdam sit pariatur deserunt ad, eos perspiciatis numquam sed facilis voluptatem cum atque veritatis adipisci dolorum laudantium!</p>
+                </main>
+            
+                <!-- * Footer content -->
+                <footer>
+                    <small>
+                        Footer content
+                    </small>
+                </footer>
+
+            </div>
         </div>
-        <h1>Zooplankton Populations</h1>
-    </header>
-
-    <!-- * Main content -->
-    <main>
-        <h2>Test H2</h2>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos, at maxime quo molestiae quibusdam sit pariatur deserunt ad, eos perspiciatis numquam sed facilis voluptatem cum atque veritatis adipisci dolorum laudantium!</p>
-    </main>
-
-    <!-- * Footer content -->
-    <footer>
-        <small>
-            Footer content
-        </small>
-    </footer>
+    </div>
+    
 
     <!-- * Bootstrap JavaScript Bundle source -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
