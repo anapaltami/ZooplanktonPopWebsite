@@ -53,12 +53,5 @@ body {
 
 .container {
     display: flex;
-}
-
-.bg-video-container .container {
-    /* background-color: aqua; */
-    border: 2px;
-    border-color: blueviolet;
     flex-direction: column;
-    justify-content: space-around;
 }
