@@ -1,5 +1,7 @@
 > You can view the website here: [ZooPOP Homepage](https://zoopop.netlify.app/ "ZooPOP Homepage")
 
+---
+
 # How to Locally View the Zooplankton Website
 
 ## 1. Click on the Code button at the top of the repository and download the zip file.
