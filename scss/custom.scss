@@ -1,1 +1,66 @@
 @import "../node_modules/bootstrap/scss/bootstrap";
+
+@import "variable";
+@import "header";
+
+// * body scss
+body {
+    font-family: $primary-font-family;
+    font-size: 16px;
+    line-height: 1.6;
+    font-weight: 400;
+    
+    @include media-breakpoint-down(lg) {
+        font-size: 14px;
+    }
+}
+
+// * container-fluid class scss
+.container-fluid {
+    max-width: 1320px;
+}
+
+// * header class scss
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 600;
+}
+
+// * custom carousel scss
+.carousel {
+    .carousel-inner {
+        max-height: 90vh;
+        img {
+            max-height: 90vh;
+        }
+    }
+
+    .carousel-item {
+        position: relative;
+        
+        &:before {
+            content: "";
+            background: rgba(0, 0, 0, 0.5);
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+        }
+    }
+    
+    .carousel-caption {
+        bottom: 10%;
+        max-width: 900px;
+        margin: 0 auto;
+    }
+    
+    h5 {
+        font-weight: 600;
+        font-size: 44px;
+        margin: 0 0 20px;
+    }
+    
+    p {
+        font-size: 20px;
+    }
+}
