@@ -1,4 +1,7 @@
+> You can view the website here: [ZooPOP Homepage](https://zoopop.netlify.app/ "ZooPOP Homepage")
+
 # How to Locally View the Zooplankton Website
+
 ## 1. Click on the Code button at the top of the repository and download the zip file.
 
    ![][img1]
@@ -13,7 +16,9 @@
 
 ---
 # Zooplankton Educational Website for ENVS-2001-1 (Spring 2023)
+
 ## Outline
+
 1. Introduction
    1. Summarize the importance of zooplankton to the ecosystem.
    2. Explain the purpose of the website to the user: to educate the user about zooplankton and zooplankton populations in an interactive way.
