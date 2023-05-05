@@ -1,3 +1,5 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/d62ea89b-e511-40e8-845b-b4cce5a48df0/deploy-status)](https://app.netlify.com/sites/zoopop/deploys)
+
 > You can view the website here: [ZooPOP Homepage](https://zoopop.netlify.app/ "ZooPOP Homepage")
 
 ---
