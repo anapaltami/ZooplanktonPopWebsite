@@ -51,6 +51,6 @@
    2. Liao, Y.-F., Faulks, L. K., & Östman Örjan. (2015). Stress tolerance and population stability of rock pool daphnia in relation to local conditions and population isolation. Hydrobiologia : The International Journal of Aquatic Sciences, 742(1), 267–278. https://doi.org/10.1007/s10750-014-1990-6
    3. Abstracts, in program order. (2006). Bulletin, Southern California Academy of Sciences, 105(Sp1), 19–85. https://doi.org/10.3160/0038-3872(2006)105[19:AO]2.0.CO;2 
 
-[img1]: img/click_code_download_zip.png
-[img2]: img/extract_all.png
-[img3]: img/navigate_to_open_with_browser.png
+[img1]: images/click_code_download_zip.png
+[img2]: images/extract_all.png
+[img3]: images/navigate_to_open_with_browser.png
