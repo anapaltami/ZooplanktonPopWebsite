@@ -4,17 +4,17 @@
 
 ---
 
-# How to Locally View the Zooplankton Website
+# How to view the Zooplankton Website locally on your machine:
 
-## 1. Click on the Code button at the top of the repository and download the zip file.
+1. Click on the Code button at the top of the repository and download the zip file.
 
    ![][img1]
 
-## 2. Extract all to a location of your choice.
+2. Extract all to a location of your choice.
 
    ![][img2]
 
-## 3. Navigate into the folder, right-click the index.html file and open it with your browser of choice.
+3. Navigate into the folder, right-click the index.html file and open it with your browser of choice.
 
    ![][img3]
 
