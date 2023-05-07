@@ -11855,12 +11855,14 @@ textarea.form-control-lg {
 }
 #header .navbar-brand {
   font-weight: 600;
+  color: #dce0e8;
 }
 #header .nav-item {
   margin: 0 0 0 30px;
 }
 #header .nav-link {
   padding: 0;
+  color: #dce0e8;
 }
 #header .nav-link.active {
   color: #1e66f5;
@@ -11883,7 +11885,13 @@ body {
   max-width: 1320px;
 }
 
-h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
+h1, .h1 {
+  font-weight: 700;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
   font-weight: 600;
 }
 
@@ -11892,7 +11900,7 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
 }
 .carousel .carousel-inner img {
   max-height: 90vh;
-  vertical-align: bottom;
+  vertical-align: center;
 }
 .carousel .carousel-item {
   position: relative;
