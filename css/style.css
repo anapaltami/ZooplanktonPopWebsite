@@ -11945,6 +11945,11 @@ h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
   padding: 20px;
 }
 
+.resource-citations {
+  overflow-x: auto;
+  max-width: 100%;
+}
+
 #generalInfo img {
   max-width: 150px;
 }
