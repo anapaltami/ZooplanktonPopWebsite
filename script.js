@@ -1,3 +1,4 @@
+// * code for data page
 google.charts.load('current', {'packages':['corechart']});
 google.charts.setOnLoadCallback(drawZooplanktonPieChart);
 
@@ -37,5 +38,4 @@ function drawZooplanktonPieChart() {
     // Instantiate and draw our chart, passing in some options.
     var chart = new google.visualization.PieChart(document.getElementById('chartZooplanktonCount'));
     chart.draw(data, options);
-  }
-  
+}

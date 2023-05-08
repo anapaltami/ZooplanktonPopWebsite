@@ -12,7 +12,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,400;0,700;1,100;1,400;1,700&display=swap" rel="stylesheet">
-    
+
     <!-- * style -->
     <link rel="stylesheet" href="css/style.css">
   </head>
@@ -57,6 +57,27 @@
     <main>
       <h1 class="text-center">Zooplankton Quiz</h1>
 
+      <!-- * quiz result modal popup -->
+      <div class="modal fade" id="quiz-result-modal" tabindex="-1" role="dialog" aria-labelledby="quiz-result-modal-label" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="quiz-result-modal-label">Quiz Result</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <p id="quiz-result-message"></p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+
       <div id="quiz-container" class="container">
         <h2>Test what you learned about zooplankton!</h2>
         <form id="quiz-form">
@@ -64,192 +85,196 @@
             <li>
               <h3 class="question">What are zooplankton?</h3>
               <label class="form-check-label d-block">
-                <input class="form-check-input" type="radio" id="radios1" value="option1">
+                <input class="form-check-input" type="radio" id="radios1" value="a">
                 Option A
               </label>
               <label class="form-check-label d-block">
-                <input class="form-check-input" type="radio" id="radios2" value="option2">
+                <input class="form-check-input" type="radio" id="radios2" value="b">
                 Option B
               </label>
               <label class="form-check-label d-block">
-                <input class="form-check-input" type="radio" id="radios3" value="option3">
+                <input class="form-check-input" type="radio" id="radios3" value="c">
                 tiny animals that drift in water
               </label>
             </li>
             <li>
               <h3 class="question">What is the main difference between zooplankton and phytoplankton?</h3>
               <label class="form-check-label d-block">
-                <input class="form-check-input" type="radio" id="radios1" value="option1">
+                <input class="form-check-input" type="radio" id="radios1" value="a">
                 zooplankton are animals and phytoplankton are plants
               </label>
               <label class="form-check-label d-block">
-                <input class="form-check-input" type="radio" id="radios2" value="option2">
+                <input class="form-check-input" type="radio" id="radios2" value="b">
                 Option B
               </label>
               <label class="form-check-label d-block">
-                <input class="form-check-input" type="radio" id="radios3" value="option3">
+                <input class="form-check-input" type="radio" id="radios3" value="c">
                 Option C
               </label>
             </li>
             <li>
               <h3 class="question">What is the two most common type of zooplankton in freshwater ecosystems?</h3>
               <label class="form-check-label d-block">
-                <input class="form-check-input" type="radio" id="radios1" value="option1">
+                <input class="form-check-input" type="radio" id="radios1" value="a">
                 cladocera and copepods
               </label>
               <label class="form-check-label d-block">
-                <input class="form-check-input" type="radio" id="radios2" value="option2">
+                <input class="form-check-input" type="radio" id="radios2" value="b">
                 Option B
               </label>
               <label class="form-check-label d-block">
-                <input class="form-check-input" type="radio" id="radios3" value="option3">
+                <input class="form-check-input" type="radio" id="radios3" value="c">
                 Option C
               </label>
             </li>
             <li>
               <h3 class="question">What is the largest type of zooplankton?</h3>
               <label class="form-check-label d-block">
-                <input class="form-check-input" type="radio" id="radios1" value="option1">
+                <input class="form-check-input" type="radio" id="radios1" value="a">
                 Option A
               </label>
               <label class="form-check-label d-block">
-                <input class="form-check-input" type="radio" id="radios2" value="option2">
+                <input class="form-check-input" type="radio" id="radios2" value="b">
                 jellyfish
               </label>
               <label class="form-check-label d-block">
-                <input class="form-check-input" type="radio" id="radios3" value="option3">
+                <input class="form-check-input" type="radio" id="radios3" value="c">
                 Option C
               </label>
             </li>
             <li>
               <h3 class="question">How do zooplankton feed?</h3>
               <label class="form-check-label d-block">
-                <input class="form-check-input" type="radio" id="radios1" value="option1">
+                <input class="form-check-input" type="radio" id="radios1" value="a">
                 Option A
               </label>
               <label class="form-check-label d-block">
-                <input class="form-check-input" type="radio" id="radios2" value="option2">
+                <input class="form-check-input" type="radio" id="radios2" value="b">
                 they use apendages like rakes to filter particles from the water
               </label>
               <label class="form-check-label d-block">
-                <input class="form-check-input" type="radio" id="radios3" value="option3">
+                <input class="form-check-input" type="radio" id="radios3" value="c">
                 Option C
               </label>
             </li>
             <li>
               <h3 class="question">What is the role of zooplankton in the food chain?</h3>
               <label class="form-check-label d-block">
-                <input class="form-check-input" type="radio" id="radios1" value="option1">
+                <input class="form-check-input" type="radio" id="radios1" value="a">
                 an intermediary second level heterotroph
               </label>
               <label class="form-check-label d-block">
-                <input class="form-check-input" type="radio" id="radios2" value="option2">
+                <input class="form-check-input" type="radio" id="radios2" value="b">
                 Option B
               </label>
               <label class="form-check-label d-block">
-                <input class="form-check-input" type="radio" id="radios3" value="option3">
+                <input class="form-check-input" type="radio" id="radios3" value="c">
                 Option C
               </label>
             </li>
             <li>
               <h3 class="question">What is the main predator of zooplankton?</h3>
               <label class="form-check-label d-block">
-                <input class="form-check-input" type="radio" id="radios1" value="option1">
+                <input class="form-check-input" type="radio" id="radios1" value="a">
                 Option A
               </label>
               <label class="form-check-label d-block">
-                <input class="form-check-input" type="radio" id="radios2" value="option2">
+                <input class="form-check-input" type="radio" id="radios2" value="b">
                 Option B
               </label>
               <label class="form-check-label d-block">
-                <input class="form-check-input" type="radio" id="radios3" value="option3">
+                <input class="form-check-input" type="radio" id="radios3" value="c">
                 other zooplankton and fish
               </label>
             </li>
             <li>
               <h3 class="question">What are some ways that humans can help protect zooplankton and their habitats?</h3>
               <label class="form-check-label d-block">
-                <input class="form-check-input" type="radio" id="radios1" value="option1">
+                <input class="form-check-input" type="radio" id="radios1" value="a">
                 reduce vehicle pollution
               </label>
               <label class="form-check-label d-block">
-                <input class="form-check-input" type="radio" id="radios2" value="option2">
+                <input class="form-check-input" type="radio" id="radios2" value="b">
                 reduce waste production
               </label>
               <label class="form-check-label d-block">
-                <input class="form-check-input" type="radio" id="radios3" value="option3">
+                <input class="form-check-input" type="radio" id="radios3" value="c">
                 all of the above
               </label>
             </li>
             <li>
               <h3 class="question">What is the main threat to zooplankton populations?</h3>
               <label class="form-check-label d-block">
-                <input class="form-check-input" type="radio" id="radios1" value="option1">
+                <input class="form-check-input" type="radio" id="radios1" value="a">
                 Option A
               </label>
               <label class="form-check-label d-block">
-                <input class="form-check-input" type="radio" id="radios2" value="option2">
+                <input class="form-check-input" type="radio" id="radios2" value="b">
                 Option B
               </label>
               <label class="form-check-label d-block">
-                <input class="form-check-input" type="radio" id="radios3" value="option3">
+                <input class="form-check-input" type="radio" id="radios3" value="c">
                 the rising sea temperatures due to climate change
               </label>
             </li>
             <li>
               <h3 class="question">What is the relationship between zooplankton and global climate change?</h3>
               <label class="form-check-label d-block">
-                <input class="form-check-input" type="radio" id="radios1" value="option1">
+                <input class="form-check-input" type="radio" id="radios1" value="a">
                 they help to remove carbon from the carbon cycle
               </label>
               <label class="form-check-label d-block">
-                <input class="form-check-input" type="radio" id="radios2" value="option2">
+                <input class="form-check-input" type="radio" id="radios2" value="b">
                 Option B
               </label>
               <label class="form-check-label d-block">
-                <input class="form-check-input" type="radio" id="radios3" value="option3">
+                <input class="form-check-input" type="radio" id="radios3" value="c">
                 Option C
               </label>
             </li>
             <li>
               <h3 class="question">What type of zooplankton are known for their bioluminescence?</h3>
               <label class="form-check-label d-block">
-                <input class="form-check-input" type="radio" id="radios1" value="option1">
+                <input class="form-check-input" type="radio" id="radios1" value="a">
                 Option A
               </label>
               <label class="form-check-label d-block">
-                <input class="form-check-input" type="radio" id="radios2" value="option2">
+                <input class="form-check-input" type="radio" id="radios2" value="b">
                 Option B
               </label>
               <label class="form-check-label d-block">
-                <input class="form-check-input" type="radio" id="radios3" value="option3">
+                <input class="form-check-input" type="radio" id="radios3" value="c">
                 luciferidae
               </label>
             </li>
             <li>
               <h3 class="question">What is the smallest type of zooplankton?</h3>
               <label class="form-check-label d-block">
-                <input class="form-check-input" type="radio" id="radios1" value="option1">
+                <input class="form-check-input" type="radio" id="radios1" value="a">
                 Option A
               </label>
               <label class="form-check-label d-block">
-                <input class="form-check-input" type="radio" id="radios2" value="option2">
+                <input class="form-check-input" type="radio" id="radios2" value="b">
                 eggs and larva of invertebrates
               </label>
               <label class="form-check-label d-block">
-                <input class="form-check-input" type="radio" id="radios3" value="option3">
+                <input class="form-check-input" type="radio" id="radios3" value="c">
                 Option C
               </label>
             </li>
           </ol>
           <div class="submit-button d-flex justify-content-center mt-3">
-            <button type="submit" class="btn btn-primary">Submit</button>
+            <button type="submit" class="btn btn-primary" data-toggle="modal" data-target="#quiz-result-modal">Submit</button>
           </div>          
         </form>
       </div>      
     </main>
-  
+
     <!-- * bootstrap js -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+
+    <!-- * javascript file -->
+    <script src="quiz.js"></script>
   </body>
 </html>
