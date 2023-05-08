@@ -11874,6 +11874,10 @@ body {
   font-size: 16px;
   line-height: 1.6;
   font-weight: 400;
+  background-color: #4c4f69;
+  color: #dce0e8;
+  padding-top: 70px;
+  background-image: url("imagesunderwater.jpg");
 }
 @media (max-width: 991.98px) {
   body {
@@ -11908,6 +11912,7 @@ h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
 .carousel .carousel-item:before {
   content: "";
   background: rgba(0, 0, 0, 0.5);
+  color: #dce0e8;
   position: absolute;
   top: 0;
   bottom: 0;
@@ -11926,6 +11931,22 @@ h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
 }
 .carousel p {
   font-size: 20px;
+}
+
+.question {
+  padding: 20px;
+}
+
+.form-check-label {
+  padding: 10px;
+}
+
+.submit-button {
+  padding: 20px;
+}
+
+#generalInfo img {
+  max-width: 150px;
 }
 
 /*# sourceMappingURL=style.css.map */

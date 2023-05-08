@@ -12,7 +12,13 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,400;0,700;1,100;1,400;1,700&display=swap" rel="stylesheet">
-    
+
+    <!-- * google charts library -->
+    <script src="https://www.gstatic.com/charts/loader.js"></script>
+
+    <!-- * javascript file -->
+    <script src="script.js"></script>
+
     <!-- * style -->
     <link rel="stylesheet" href="css/style.css">
   </head>
@@ -21,13 +27,13 @@
     <!-- * header content -->
     <header id="header">
       <!-- * navbar -->
-      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <nav class="navbar navbar-expand-lg bg-black bg-opacity-50 fixed-top">
         <div class="container-fluid">
           <a class="navbar-brand" href="index.html">ZooPOP</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse flex-grow-0" id="navbarTogglerDemo02">
+          <div class="collapse navbar-collapse flex-grow-0" id="navbarToggler">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
                 <a class="nav-link" href="index.html">Home</a>
@@ -56,6 +62,18 @@
 
     <!-- * main content -->
     <main>
+      <h1 class="text-center">Zooplankton Data</h1>
+
+      <!-- * introduction -->
+      <div class="data-introduction container">
+        <h2>Where did this data come from?</h2>
+        <p>All of the data on this page is brought to you by students of Hawaii Pacific University who went out on the Kaholo, a 42 ft. x 20 ft. twin diesel power catamaran, in 2022 and 2023. On the <a href="resources.html">Resources</a> page, you can find a link to the Hawaii Pacific University page that provides more detail about the Kaholo, where it came from, and what it is used for by the university.</p>
+      </div>
+      
+      <!-- * pie chart container -->
+      <div class="container">
+        <div id="chartZooplanktonCount"></div>
+      </div>
     </main>
   
     <!-- * bootstrap js -->

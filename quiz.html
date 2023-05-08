@@ -21,13 +21,13 @@
     <!-- * header content -->
     <header id="header">
       <!-- * navbar -->
-      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <nav class="navbar navbar-expand-lg bg-black bg-opacity-50 fixed-top">
         <div class="container-fluid">
           <a class="navbar-brand" href="index.html">ZooPOP</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse flex-grow-0" id="navbarTogglerDemo02">
+          <div class="collapse navbar-collapse flex-grow-0" id="navbarToggler">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
                 <a class="nav-link" href="index.html">Home</a>
@@ -51,11 +51,202 @@
           </div>
         </div>
       </nav>
-
     </header>
 
     <!-- * main content -->
     <main>
+      <h1 class="text-center">Zooplankton Quiz</h1>
+
+      <div id="quiz-container" class="container">
+        <h2>Test what you learned about zooplankton!</h2>
+        <form id="quiz-form">
+          <ol>
+            <li>
+              <h3 class="question">What are zooplankton?</h3>
+              <label class="form-check-label d-block">
+                <input class="form-check-input" type="radio" id="radios1" value="option1">
+                Option A
+              </label>
+              <label class="form-check-label d-block">
+                <input class="form-check-input" type="radio" id="radios2" value="option2">
+                Option B
+              </label>
+              <label class="form-check-label d-block">
+                <input class="form-check-input" type="radio" id="radios3" value="option3">
+                tiny animals that drift in water
+              </label>
+            </li>
+            <li>
+              <h3 class="question">What is the main difference between zooplankton and phytoplankton?</h3>
+              <label class="form-check-label d-block">
+                <input class="form-check-input" type="radio" id="radios1" value="option1">
+                zooplankton are animals and phytoplankton are plants
+              </label>
+              <label class="form-check-label d-block">
+                <input class="form-check-input" type="radio" id="radios2" value="option2">
+                Option B
+              </label>
+              <label class="form-check-label d-block">
+                <input class="form-check-input" type="radio" id="radios3" value="option3">
+                Option C
+              </label>
+            </li>
+            <li>
+              <h3 class="question">What is the two most common type of zooplankton in freshwater ecosystems?</h3>
+              <label class="form-check-label d-block">
+                <input class="form-check-input" type="radio" id="radios1" value="option1">
+                cladocera and copepods
+              </label>
+              <label class="form-check-label d-block">
+                <input class="form-check-input" type="radio" id="radios2" value="option2">
+                Option B
+              </label>
+              <label class="form-check-label d-block">
+                <input class="form-check-input" type="radio" id="radios3" value="option3">
+                Option C
+              </label>
+            </li>
+            <li>
+              <h3 class="question">What is the largest type of zooplankton?</h3>
+              <label class="form-check-label d-block">
+                <input class="form-check-input" type="radio" id="radios1" value="option1">
+                Option A
+              </label>
+              <label class="form-check-label d-block">
+                <input class="form-check-input" type="radio" id="radios2" value="option2">
+                jellyfish
+              </label>
+              <label class="form-check-label d-block">
+                <input class="form-check-input" type="radio" id="radios3" value="option3">
+                Option C
+              </label>
+            </li>
+            <li>
+              <h3 class="question">How do zooplankton feed?</h3>
+              <label class="form-check-label d-block">
+                <input class="form-check-input" type="radio" id="radios1" value="option1">
+                Option A
+              </label>
+              <label class="form-check-label d-block">
+                <input class="form-check-input" type="radio" id="radios2" value="option2">
+                they use apendages like rakes to filter particles from the water
+              </label>
+              <label class="form-check-label d-block">
+                <input class="form-check-input" type="radio" id="radios3" value="option3">
+                Option C
+              </label>
+            </li>
+            <li>
+              <h3 class="question">What is the role of zooplankton in the food chain?</h3>
+              <label class="form-check-label d-block">
+                <input class="form-check-input" type="radio" id="radios1" value="option1">
+                an intermediary second level heterotroph
+              </label>
+              <label class="form-check-label d-block">
+                <input class="form-check-input" type="radio" id="radios2" value="option2">
+                Option B
+              </label>
+              <label class="form-check-label d-block">
+                <input class="form-check-input" type="radio" id="radios3" value="option3">
+                Option C
+              </label>
+            </li>
+            <li>
+              <h3 class="question">What is the main predator of zooplankton?</h3>
+              <label class="form-check-label d-block">
+                <input class="form-check-input" type="radio" id="radios1" value="option1">
+                Option A
+              </label>
+              <label class="form-check-label d-block">
+                <input class="form-check-input" type="radio" id="radios2" value="option2">
+                Option B
+              </label>
+              <label class="form-check-label d-block">
+                <input class="form-check-input" type="radio" id="radios3" value="option3">
+                other zooplankton and fish
+              </label>
+            </li>
+            <li>
+              <h3 class="question">What are some ways that humans can help protect zooplankton and their habitats?</h3>
+              <label class="form-check-label d-block">
+                <input class="form-check-input" type="radio" id="radios1" value="option1">
+                reduce vehicle pollution
+              </label>
+              <label class="form-check-label d-block">
+                <input class="form-check-input" type="radio" id="radios2" value="option2">
+                reduce waste production
+              </label>
+              <label class="form-check-label d-block">
+                <input class="form-check-input" type="radio" id="radios3" value="option3">
+                all of the above
+              </label>
+            </li>
+            <li>
+              <h3 class="question">What is the main threat to zooplankton populations?</h3>
+              <label class="form-check-label d-block">
+                <input class="form-check-input" type="radio" id="radios1" value="option1">
+                Option A
+              </label>
+              <label class="form-check-label d-block">
+                <input class="form-check-input" type="radio" id="radios2" value="option2">
+                Option B
+              </label>
+              <label class="form-check-label d-block">
+                <input class="form-check-input" type="radio" id="radios3" value="option3">
+                the rising sea temperatures due to climate change
+              </label>
+            </li>
+            <li>
+              <h3 class="question">What is the relationship between zooplankton and global climate change?</h3>
+              <label class="form-check-label d-block">
+                <input class="form-check-input" type="radio" id="radios1" value="option1">
+                they help to remove carbon from the carbon cycle
+              </label>
+              <label class="form-check-label d-block">
+                <input class="form-check-input" type="radio" id="radios2" value="option2">
+                Option B
+              </label>
+              <label class="form-check-label d-block">
+                <input class="form-check-input" type="radio" id="radios3" value="option3">
+                Option C
+              </label>
+            </li>
+            <li>
+              <h3 class="question">What type of zooplankton are known for their bioluminescence?</h3>
+              <label class="form-check-label d-block">
+                <input class="form-check-input" type="radio" id="radios1" value="option1">
+                Option A
+              </label>
+              <label class="form-check-label d-block">
+                <input class="form-check-input" type="radio" id="radios2" value="option2">
+                Option B
+              </label>
+              <label class="form-check-label d-block">
+                <input class="form-check-input" type="radio" id="radios3" value="option3">
+                luciferidae
+              </label>
+            </li>
+            <li>
+              <h3 class="question">What is the smallest type of zooplankton?</h3>
+              <label class="form-check-label d-block">
+                <input class="form-check-input" type="radio" id="radios1" value="option1">
+                Option A
+              </label>
+              <label class="form-check-label d-block">
+                <input class="form-check-input" type="radio" id="radios2" value="option2">
+                eggs and larva of invertebrates
+              </label>
+              <label class="form-check-label d-block">
+                <input class="form-check-input" type="radio" id="radios3" value="option3">
+                Option C
+              </label>
+            </li>
+          </ol>
+          <div class="submit-button d-flex justify-content-center mt-3">
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </div>          
+        </form>
+      </div>      
     </main>
   
     <!-- * bootstrap js -->
